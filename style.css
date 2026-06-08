@@ -46,5 +46,27 @@ body {
 }
 #move-random {
   position: absolute;
-  transition: all 0.15s ease;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff4d6d, #ff758f);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.4);
+  transition: all 0.2s ease;
+
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 999;
+}
+
+#move-random:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(255, 77, 109, 0.6);
+}
+#move-random::before {
+  content: "😭 ";
 }
